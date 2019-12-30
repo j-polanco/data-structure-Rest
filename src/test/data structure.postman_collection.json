@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "91f2a648-e29b-42f9-bf7b-e4f49e3b7824",
+		"name": "data structure",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ordered Linked List",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{host}}:{{port}}//orderedLinkedList/",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"",
+								"orderedLinkedList",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All As String",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{host}}:{{port}}//orderedLinkedList/string",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"",
+								"orderedLinkedList",
+								"string"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clear",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{host}}:{{port}}/orderedLinkedList/clearAll",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"orderedLinkedList",
+								"clearAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Element",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"value\" : 5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}:{{port}}//orderedLinkedList/",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"",
+								"orderedLinkedList",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "92aa2f9d-23ee-49ba-b4c1-f078e22b24f7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "74f0ca6d-651d-47f0-9ef0-c02850bde024",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "b7f089c2-f209-4741-ae0a-44f0d8dcb81a",
+			"key": "host",
+			"value": "127.0.0.1",
+			"type": "string"
+		},
+		{
+			"id": "21e95e0f-6057-4d1b-8902-de6ec6af69c3",
+			"key": "port",
+			"value": "8080",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
